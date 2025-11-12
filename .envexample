@@ -1,0 +1,13 @@
+# .envexample
+# Copy this file to .env and fill in your real values.
+# Do NOT commit the real .env file to version control.
+
+# GitLab instance URL
+GITLAB_URL=https://gitlab.com
+
+# Personal access token with at least `read_api` scope
+# Example format on GitLab.com: glpat-xxxxxxxxxxxxxxxxxxxx
+GITLAB_PRIVATE_TOKEN=glpat-xxxxxxxxxxxxxxxxxxxx
+
+# Optional: if you use a proxy or want to change API behavior, set here
+# GITLAB_API_TIMEOUT=10
