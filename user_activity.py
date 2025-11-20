@@ -1,10 +1,10 @@
 import requests
 import os
 import datetime
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 # Load environment variables from .env file
-#load_dotenv()
+load_dotenv()
 
 # --- Configuration ---
 GITLAB_URL = os.getenv("GITLAB_URL")
@@ -22,7 +22,7 @@ HEADERS = {
 }
 
 # --- Date Calculation ---
-MONTHS_TO_GO_BACK = 5
+MONTHS_TO_GO_BACK = 6
 # Calculate the 'after' date (5 months ago)
 # We use the current date and subtract 5 months (approx 150 days)
 # Using `relativedelta` from dateutil is more precise for months, but we use
